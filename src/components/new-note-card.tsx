@@ -7,6 +7,10 @@ interface NewNoteCardProps {
     onNoteCreated: (content: string) => void
 }
 
+const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition
+
+const speechRecognition = new SpeechRecognitionAPI()
+
 export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
     const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true)
     const [isRecording, setIsRecording] = useState(false)
@@ -52,10 +56,7 @@ export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
         setIsRecording(true)
         setShouldShowOnboarding(false)
 
-        const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition
-
-        const speechRecognition = new SpeechRecognitionAPI()
-
+       
         speechRecognition.lang = 'pt-BR'
         speechRecognition.continuous = true  // continua gravando até ter uma pausa manual
         speechRecognition.maxAlternatives = 1  // trazer apenas uma alternativa para a fala
@@ -65,7 +66,7 @@ export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
             const transcription = Array.from(event.results).reduce((text, result) => {
                 return text.concat(result[0].transcript)
             }, '') // essa parte '' do reduce é o estado inicial do 'text' que seria a variavel final do reduce
-            
+
             setContent(transcription)
         }
 
@@ -78,6 +79,8 @@ export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
 
     function handleStopRecording() {
         setIsRecording(false)
+
+        speechRecognition.stop()
     }
 
 
