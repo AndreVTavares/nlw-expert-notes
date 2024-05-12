@@ -2,7 +2,7 @@
 
 <img src="Imagem readme projeto expert note.jfif" alt="Exemplo imagem">
 
-O projeto consiste na utilização de uma API de reconhecimento de voz para criação de notas. Inicialização do projeto com a ferramenta Vite em React e Typescript.
+The project consists of using a speech recognition API to create notes. Project initialization with the Vite tool using React and Typescript.
 
 
 ## 🚀 Setup
