@@ -1,6 +1,6 @@
 # Expert Notes
 
-<img src="imagem.png" alt="Exemplo imagem">
+<img src="Imagem readme projeto expert note.jfif" alt="Exemplo imagem">
 
 O projeto consiste na utilização de uma API de reconhecimento de voz para criação de notas. Inicialização do projeto com a ferramenta Vite em React e Typescript.
 
