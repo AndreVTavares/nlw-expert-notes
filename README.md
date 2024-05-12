@@ -5,24 +5,22 @@
 O projeto consiste na utilização de uma API de reconhecimento de voz para criação de notas. Inicialização do projeto com a ferramenta Vite em React e Typescript.
 
 
-## 🚀 Instalando Expert Notes
+## 🚀 Setup
 
 - Clone the repository;
 - Install dependencies (`npm install`);
 - Run application (`npm run dev`);
 
 
-## 📫 Contribuindo para Expert Notes
+## 📫 Contributing to Expert Notes
 
-Para contribuir com Expert Notes, siga estas etapas:
+1. fork this repo.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make your changes and confirm them: `git commit -m '<commit_message>'`
+4. Push to original branch: `git push origin nlw-expert-notes / <local>`
+5. Create the pull request.
 
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin nlw-expert-notes / <local>`
-5. Crie a solicitação de pull.
-
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
 
